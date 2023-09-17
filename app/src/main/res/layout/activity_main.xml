@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="78dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_margin="1dp"
+                >
+                <View
+                    android:id="@+id/color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FF0000" />
+
+                <TextView
+                    android:id="@+id/textColor1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="255,255,255" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="78dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_margin="1dp"
+                >
+
+                <View
+                    android:id="@+id/color2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#00FF00" />
+
+                <TextView
+                    android:id="@+id/textColor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="255,255,255" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="78dp"
+                android:layout_height="100dp"
+                android:layout_margin="1dp"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/color3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#0000FF" />
+
+                <TextView
+                    android:id="@+id/textColor3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="255,255,255" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="78dp"
+                android:layout_margin="1dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/color4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFFF00" />
+
+                <TextView
+                    android:id="@+id/textColor4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="255,255,255" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="78dp"
+                android:layout_height="100dp"
+                android:layout_margin="1dp"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/color5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FF00FF" />
+
+                <TextView
+                    android:id="@+id/textColor5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="255,255,255\n5" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
